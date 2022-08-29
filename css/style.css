@@ -1,0 +1,418 @@
+/* comentarios */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Kanit;
+  /*google font*/
+  font-weight: bold;
+}
+
+.header__img {
+  margin-top: 6px;
+  margin-bottom: 3px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 60px;
+}
+
+.logoMenu {
+  display: flex;
+  flex-wrap: wrap;
+  /*   padding: 0.5rem; */
+  text-align: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+@keyframes logorotacion {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo:hover {
+  opacity: 0.5;
+  animation: logorotacion 2s linear 0s infinite none;
+}
+
+.logo img {
+  height: 100px;
+}
+
+#menuHome {
+  padding-top: 25px;
+  border-top: 100px;
+  padding-right: 30vh;
+}
+
+#menuHome ul {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.menu__item {
+  padding: 1rem;
+}
+
+.menu__item a:hover {
+  opacity: 0.5;
+}
+
+.gralMain {
+  height: 100vh;
+  /* padding: 1rem 3rem 3rem 3rem; */
+  background-image: url(/assets/img/fondo\ fungi.webp);
+}
+
+.mainProductos {
+  padding: 1rem 3rem 3rem 3rem;
+  background-image: url(/assets/img/fondo\ fungi\ -\ opaco.jpg);
+}
+
+.mainInvestigacion {
+  padding: 1rem 3rem 3rem 3rem;
+  background-image: url(/assets/img/fondo\ fungi\ -\ opaco.jpg);
+}
+
+.mainHongos {
+  padding: 1rem 3rem 3rem 3rem;
+  background-image: url(/assets/img/fondo\ fungi\ -\ opaco.jpg);
+}
+
+.mainContacto {
+  padding: 1rem 3rem 3rem 3rem;
+  background-image: url(/assets/img/fondo\ fungi\ -\ opaco.jpg);
+  width: 100vw;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-grow: 2;
+}
+
+.formularioCentral {
+  order: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 30px 30px 120px 25px;
+  border: 3px solid black;
+  border-radius: 50px;
+  margin: 0 auto;
+  justify-content: center;
+  grid-row-gap: 10px;
+}
+
+.formulario .imagenizq {
+  order: 1;
+  opacity: 0.5;
+}
+
+.formulario .imagender {
+  order: 3;
+  opacity: 0.5;
+}
+
+.mainContacto .formulario h2 {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-column: 2/3;
+  grid-row-end: 1;
+}
+
+.mainContacto .nombreApellido {
+  grid-column: 2/3;
+  grid-row: 1;
+  grid-row-end: 2;
+  justify-items: center;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.mainContacto .telefono {
+  grid-column: 2/3;
+  grid-row: 2;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.mainContacto .email {
+  grid-column: 2/3;
+  grid-row: 3;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.formulario div {
+  grid-column: 2/3;
+  grid-row: 5;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.mainContacto .mensaje {
+  grid-column: 2/3;
+  grid-row: 4;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.mainProductos p {
+  opacity: 1 !important;
+}
+
+.mainPage {
+  width: 600px;
+  display: grid;
+  /*  justify-content: center;
+  align-content: center; */
+  margin: 0 auto;
+  grid-template-areas:
+    "one two two two"
+    "one three six four"
+    "one five five four";
+  grid-template-columns: [one] 35% [two] 20% [three] 20% [four] 25%;
+  grid-template-rows: [one] 35% [two] 30% [three] 35%;
+}
+
+/* grid template para distribuir los tamaños del main a las imagenes */
+
+.mainResponsive {
+  display: none;
+}
+
+.hongosHome {
+  grid-area: one;
+  display: flex;
+  border: solid 1px black;
+}
+
+/* .hongosHome span {
+  background-color: transparent;
+  display: none;
+} */
+
+/* .hongosHome span:hover {
+  display: block;
+} */
+
+.hongosHome:hover {
+  opacity: 0.5;
+}
+
+.hongosHome a img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* .hongosHome a img:hover {
+  opacity: 0.5;
+} */
+
+.investigacionHome {
+  grid-area: two;
+  width: 100%;
+  border: solid 1px black;
+}
+
+.investigacionHome a img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.investigacionHome a img:hover {
+  opacity: 0.5;
+}
+
+.vacio {
+  grid-area: three;
+  border: solid 1px black;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.vacio:hover {
+  opacity: 0.5;
+}
+
+.vacio2 {
+  grid-area: six;
+  border: solid 1px black;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.vacio2:hover {
+  opacity: 0.5;
+}
+
+.productosHome {
+  grid-area: four;
+  width: auto;
+  border: solid 1px black;
+  display: inline-block;
+}
+
+.productosHome a img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.productosHome a img:hover {
+  opacity: 0.5;
+}
+
+.contactoHome {
+  grid-area: five;
+  border: solid 1px black;
+  width: 100%;
+}
+
+.contactoHome a img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contactoHome a img:hover {
+  opacity: 0.5;
+}
+
+#footer {
+  display: grid;
+  grid-template-areas: "one two three";
+  grid-template-columns: [one] 25% [two] 50% [three] 25%;
+  padding: 2rem;
+
+  /*   display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: solid 1px; */
+}
+
+.footer__text {
+  grid-area: one;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  grid-area: two;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes ul {
+  display: flex;
+}
+
+.redes ul li img {
+  width: 50px;
+}
+
+/* .redes .redes__img {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.redes__item {
+  background-color: aqua;
+} */
+
+.direccion {
+  grid-area: three;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*   place-self: end; */
+}
+
+#footer .footer__text img {
+  margin-top: 6px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  padding: 1px;
+  width: 50px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+
+@media (max-width: 900px) {
+  #menuHome ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .mainPage {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .mainResponsive {
+    /*     display: flex;
+    flex-direction: column; */
+    display: grid;
+    justify-items: center;
+    grid-gap: 4rem;
+  }
+
+  .formulario .imagenizq {
+    display: none;
+  }
+
+  .formulario .imagender {
+    display: none;
+  }
+
+  .imgResponsive img {
+    /* object-fit: scale-down; */
+    margin: 0 auto;
+    width: 90%;
+    height: 300px;
+    padding: 1 rem;
+    border: 3px solid black;
+  }
+
+  .gralMain {
+    height: 100%;
+    width: 100vw;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menuHome {
+    padding: 0;
+  }
+
+  .logoMenu {
+    justify-content: center;
+  }
+}
