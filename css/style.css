@@ -69,27 +69,27 @@
 .gralMain {
   height: 100vh;
   /* padding: 1rem 3rem 3rem 3rem; */
-  background-image: url(/assets/img/fondo\ fungi.webp);
+  background-image: url(../assets/img/fondo\ fungi.webp);
 }
 
 .mainProductos {
   padding: 1rem 3rem 3rem 3rem;
-  background-image: url(/assets/img/fondo\ fungi\ -\ opaco.jpg);
+  background-image: url(../assets/img/fondo\ fungi\ -\ opaco.jpg);
 }
 
 .mainInvestigacion {
   padding: 1rem 3rem 3rem 3rem;
-  background-image: url(/assets/img/fondo\ fungi\ -\ opaco.jpg);
+  background-image: url(../assets/img/fondo\ fungi\ -\ opaco.jpg);
 }
 
 .mainHongos {
   padding: 1rem 3rem 3rem 3rem;
-  background-image: url(/assets/img/fondo\ fungi\ -\ opaco.jpg);
+  background-image: url(../assets/img/fondo\ fungi\ -\ opaco.jpg);
 }
 
 .mainContacto {
   padding: 1rem 3rem 3rem 3rem;
-  background-image: url(/assets/img/fondo\ fungi\ -\ opaco.jpg);
+  background-image: url(../assets/img/fondo\ fungi\ -\ opaco.jpg);
   width: 100vw;
 }
 
