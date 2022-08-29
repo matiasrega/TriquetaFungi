@@ -5,9 +5,15 @@
   margin: 0;
   text-decoration: none;
   list-style-type: none;
-  font-family: Kanit;
+  font-family: Kanit !important;
   /*google font*/
   font-weight: bold;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
 }
 
 .header__img {
