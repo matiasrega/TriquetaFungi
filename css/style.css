@@ -124,6 +124,13 @@ a:active {
   }
 }
 
+.carousel-inner div img {
+  margin: 0 auto;
+  justify-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 .navbar div a img:hover {
   animation: logorotacion 2s linear 0s infinite none;
 }
