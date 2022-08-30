@@ -16,7 +16,87 @@ a:active {
   text-decoration: none;
 }
 
-.header__img {
+.tooltip1 {
+  position: relative;
+}
+
+.hongosHome .tooltip-box1 {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  line-height: 20px;
+  z-index: 500;
+  text-align: center;
+  bottom: 150px;
+  left: 150px;
+  border-radius: 10px;
+}
+
+.hongosHome:hover .tooltip-box1 {
+  display: block;
+}
+
+.tooltip2 {
+  position: relative;
+}
+
+.investigacionHome .tooltip-box2 {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  line-height: 20px;
+  z-index: 500;
+  text-align: center;
+  bottom: 400px;
+  left: 600px;
+  border-radius: 10px;
+}
+
+.investigacionHome:hover .tooltip-box2 {
+  display: block;
+}
+
+.tooltip3 {
+  position: relative;
+}
+
+.productosHome .tooltip-box3 {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  line-height: 20px;
+  z-index: 500;
+  text-align: center;
+  bottom: 80px;
+  left: 800px;
+  border-radius: 10px;
+}
+
+.productosHome:hover .tooltip-box3 {
+  display: block;
+}
+
+.tooltip4 {
+  position: relative;
+}
+
+.contactoHome .tooltip-box4 {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  line-height: 20px;
+  z-index: 500;
+  text-align: center;
+  bottom: -80px;
+  left: 500px;
+  border-radius: 10px;
+}
+
+.contactoHome:hover .tooltip-box4 {
+  display: block;
+}
+
+/* .header__img {
   margin-top: 6px;
   margin-bottom: 3px;
   padding: 0px;
@@ -30,13 +110,13 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   /*   padding: 0.5rem; */
-  text-align: center;
+/*   text-align: center;
   justify-content: space-between;
 }
-
-.logo {
+ */
+/* .logo {
   display: flex;
-}
+} */
 
 @keyframes logorotacion {
   0% {
@@ -44,15 +124,19 @@ a:active {
   }
 }
 
+.navbar div a img:hover {
+  animation: logorotacion 2s linear 0s infinite none;
+}
+
 .logo:hover {
   opacity: 0.5;
   animation: logorotacion 2s linear 0s infinite none;
 }
 
-.logo img {
+/* .logo img {
   height: 100px;
 }
-
+ */
 #menuHome {
   padding-top: 25px;
   border-top: 100px;
@@ -203,29 +287,12 @@ a:active {
   border: solid 1px black;
 }
 
-/* .hongosHome span {
-  background-color: transparent;
-  display: none;
-} */
-
-/* .hongosHome span:hover {
-  display: block;
-} */
-
-.hongosHome:hover {
-  opacity: 0.5;
-}
-
 .hongosHome a img {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
-
-/* .hongosHome a img:hover {
-  opacity: 0.5;
-} */
 
 .investigacionHome {
   grid-area: two;
@@ -238,10 +305,6 @@ a:active {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-.investigacionHome a img:hover {
-  opacity: 0.5;
 }
 
 .vacio {
@@ -283,7 +346,7 @@ a:active {
 }
 
 .productosHome a img:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .contactoHome {
@@ -300,7 +363,15 @@ a:active {
 }
 
 .contactoHome a img:hover {
-  opacity: 0.5;
+  opacity: 0.8;
+}
+
+.investigacionHome a img:hover {
+  opacity: 0.8;
+}
+
+.hongosHome a img:hover {
+  opacity: 0.8;
 }
 
 #footer {
