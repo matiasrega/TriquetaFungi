@@ -437,7 +437,8 @@ a:active {
   text-align: center;
   margin-bottom: 15px;
   font-weight: bolder;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 12px;
 }
 
 .texto1 {
@@ -453,7 +454,8 @@ a:active {
   text-align: center;
   margin-bottom: 15px;
   font-weight: bolder;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 12px;
 }
 
 .texto2 {
@@ -469,7 +471,8 @@ a:active {
   text-align: center;
   margin-bottom: 15px;
   font-weight: bolder;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 12px;
 }
 
 .texto3 {
