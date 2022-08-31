@@ -20,6 +20,10 @@ a:active {
   position: relative;
 }
 
+h2 {
+  text-align: center;
+}
+
 .hongosHome .tooltip-box1 {
   display: none;
   position: absolute;
@@ -126,7 +130,6 @@ a:active {
 
 .carousel-inner div img {
   margin: 0 auto;
-  justify-items: center;
   border: 1px solid black;
   border-radius: 10px;
 }
