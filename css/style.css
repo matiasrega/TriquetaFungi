@@ -482,7 +482,29 @@ a:active {
 
 .texto3 p {
   margin-top: 2rem;
+  text-align: center;
 }
+
+.card-body1 {
+  height: 100%;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.card-body1 .card-title {
+  text-align: center;
+}
+
+.card-body1 .card-text {
+  text-align: center;
+}
+
+/* .card-body1 button {
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-items: center;
+} */
 
 @media (max-width: 900px) {
   #menuHome ul {
@@ -499,8 +521,6 @@ a:active {
 
 @media (max-width: 450px) {
   .mainResponsive {
-    /*     display: flex;
-    flex-direction: column; */
     display: grid;
     justify-items: center;
     grid-gap: 4rem;
