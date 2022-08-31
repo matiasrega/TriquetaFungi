@@ -20,10 +20,6 @@ a:active {
   position: relative;
 }
 
-h2 {
-  text-align: center;
-}
-
 .hongosHome .tooltip-box1 {
   display: none;
   position: absolute;
@@ -418,15 +414,6 @@ h2 {
   width: 50px;
 }
 
-/* .redes .redes__img {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.redes__item {
-  background-color: aqua;
-} */
-
 .direccion {
   grid-area: three;
   display: flex;
@@ -444,6 +431,54 @@ h2 {
   height: auto;
   border: 1px solid black;
   border-radius: 40px;
+}
+
+#list-item-1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+
+.texto1 {
+  text-align: center;
+  margin: 1rem 3rem 1rem 1rem;
+}
+
+.texto1 p {
+  margin-top: 2rem;
+}
+
+#list-item-2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+
+.texto2 {
+  text-align: center;
+  margin: 1rem 3rem 1rem 1rem;
+}
+
+.texto2 p {
+  margin-top: 2rem;
+}
+
+#list-item-3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+
+.texto3 {
+  text-align: center;
+  margin: 1rem 3rem 1rem 1rem;
+}
+
+.texto3 p {
+  margin-top: 2rem;
 }
 
 @media (max-width: 900px) {
