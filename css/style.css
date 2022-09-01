@@ -486,25 +486,46 @@ a:active {
 }
 
 .card-body1 {
-  height: 100%;
-  padding: 5px;
-  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: self-end;
 }
 
-.card-body1 .card-title {
-  text-align: center;
+.cardGrl {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.card-body1 .card-text {
-  text-align: center;
+.contenerPadreCards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* .card-body1 button {
-  align-self: center;
-  justify-self: center;
-  align-content: center;
-  justify-items: center;
+/* @media (min-width: 840px) {
+  .mainInvestigacion .div {
+    display: flex;
+  }
 } */
+
+.indice {
+  position: fixed;
+  left: 80%;
+}
+
+@media (max-width: 1100px) {
+  .indice {
+    display: none;
+  }
+
+  .descripcionCarrousel {
+    margin: 0 auto !important;
+  }
+}
 
 @media (max-width: 900px) {
   #menuHome ul {
