@@ -450,6 +450,8 @@ a:active {
 
 .texto1 p {
   margin-top: 2rem;
+  text-align: justify;
+  text-justify: newspaper;
 }
 
 #list-item-2 {
@@ -466,6 +468,8 @@ a:active {
 
 .texto2 p {
   margin-top: 2rem;
+  text-align: justify;
+  text-justify: newspaper;
 }
 
 #list-item-3 {
@@ -483,6 +487,8 @@ a:active {
 .texto3 p {
   margin-top: 2rem;
   text-align: center;
+  text-align: justify;
+  text-justify: newspaper;
 }
 
 .card-body1 {
@@ -514,7 +520,7 @@ a:active {
 
 .indice {
   position: fixed;
-  left: 80%;
+  left: 83%;
   top: 50%;
 }
 
