@@ -182,7 +182,7 @@ a:active {
 }
 
 .mainHongos {
-  padding: 1rem 3rem 3rem 3rem;
+  padding: 1rem 1rem 1rem 1rem;
   background-image: url(../assets/img/fondo\ fungi\ -\ opaco.jpg);
 }
 
@@ -445,7 +445,6 @@ a:active {
 }
 
 .texto1 {
-  text-align: center;
   margin: 1rem 3rem 1rem 1rem;
 }
 
@@ -462,7 +461,6 @@ a:active {
 }
 
 .texto2 {
-  text-align: center;
   margin: 1rem 3rem 1rem 1rem;
 }
 
@@ -479,7 +477,6 @@ a:active {
 }
 
 .texto3 {
-  text-align: center;
   margin: 1rem 3rem 1rem 1rem;
 }
 
@@ -518,11 +515,24 @@ a:active {
 .indice {
   position: fixed;
   left: 80%;
+  top: 50%;
 }
 
 @media (max-width: 1100px) {
   .indice {
     display: none;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .carousel-inner {
+    width: 100%;
+  }
+
+  .carousel-inner div img {
+    width: 100%;
   }
 
   .descripcionCarrousel {
