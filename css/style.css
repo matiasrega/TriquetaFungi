@@ -163,6 +163,9 @@ a:active {
 }
 
 .gralMain {
+  padding-top: 6rem;
+  justify-content: center;
+  align-content: center;
   height: 100vh;
   /* padding: 1rem 3rem 3rem 3rem; */
   background-image: url(../assets/img/fondo\ fungi.webp);
@@ -499,7 +502,7 @@ a:active {
   justify-content: space-between;
 }
 
-.contenerPadreCards {
+.contenedorPadreCards {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -541,10 +544,26 @@ a:active {
 }
 
 @media (max-width: 450px) {
+  .gralMain {
+    margin: 0 auto;
+  }
+
   .mainResponsive {
     display: grid;
-    justify-items: center;
     grid-gap: 4rem;
+    width: 100%;
+  }
+
+  .imgResponsive {
+    padding: 2rem;
+  }
+
+  .imgResponsive img {
+    justify-items: center;
+  }
+
+  .mainResponsive div:last-child {
+    padding-bottom: 4rem;
   }
 
   .formulario .imagenizq {
@@ -556,11 +575,8 @@ a:active {
   }
 
   .imgResponsive img {
-    /* object-fit: scale-down; */
-    margin: 0 auto;
-    width: 90%;
-    height: 300px;
-    padding: 1 rem;
+    width: 100%;
+    height: 18.75rem;
     border: 3px solid black;
   }
 
