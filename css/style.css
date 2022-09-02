@@ -163,7 +163,7 @@ a:active {
 }
 
 .gralMain {
-  padding-top: 6rem;
+  padding-top: 2rem;
   justify-content: center;
   align-content: center;
   height: 100vh;
@@ -537,9 +537,10 @@ a:active {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 610px) {
   .mainPage {
-    display: none;
+    width: 100vw;
+    height: auto;
   }
 }
 
@@ -548,18 +549,18 @@ a:active {
     margin: 0 auto;
   }
 
+  .mainPage {
+    display: none;
+  }
+
   .mainResponsive {
     display: grid;
-    grid-gap: 4rem;
+    grid-gap: 1rem;
     width: 100%;
   }
 
   .imgResponsive {
-    padding: 2rem;
-  }
-
-  .imgResponsive img {
-    justify-items: center;
+    padding: 0.5rem 2rem 0.5rem 2rem;
   }
 
   .mainResponsive div:last-child {
@@ -575,6 +576,7 @@ a:active {
   }
 
   .imgResponsive img {
+    justify-items: center;
     width: 100%;
     height: 18.75rem;
     border: 3px solid black;
