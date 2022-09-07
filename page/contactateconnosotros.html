@@ -47,7 +47,7 @@
     </header> -->
     <header>
       <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container-fluid">
+        <div class="container-fluid ">
           <a class="navbar-brand" href="../index.html"
             ><img
               class="img-fluid"
@@ -97,46 +97,55 @@
 
          <div class="imagender"><img src="../assets/img/fungi blanco y negro.jpg" alt="ImagenComunicacion"></div>
          
+        
         <div class="formularioCentral">
-          <h2>Contáctate con nosotros</h2>
+            <h2>Contáctate con nosotros</h2>
+             <form class="formularioContacto" action="">
+            
+              <ul>
 
-          <input class="nombreApellido"
-          type="text"
-          name="Nombre y Apellido"
-          placeholder=" Nombre y Apellido"
-          id="Nombre y Apellido"
-          required
-          />
+               <li><input class="nombreApellido"
+                type="text"
+                name="Nombre y Apellido"
+                placeholder=" Nombre y Apellido"
+                id="Nombre y Apellido"
+                required
+                />
+                </li>
 
-          <input class="telefono"
-          type="tel"
-          name="telefono"
-          placeholder=" Telefono"
-          id="telefono"
-          required
-          />
-          <input class="email"
-          type="email"
-          name="email"
-          placeholder=" Email"
-          id="email"
-          required
-          />
-          <textarea class="mensaje"
-          name="Mensaje"
-          id="Mensaje"
-          cols="30"
-          rows="10"
-          required
-          placeholder=" Dejanos tu consulta  "
-          ></textarea> 
+                <li><input class="telefono"
+                type="tel"
+                name="telefono"
+                placeholder=" Telefono"
+                id="telefono"
+                required
+                />
+                </li>
+                
+                <li><input class="email"
+                type="email"
+                name="email"
+                placeholder=" Email"
+                id="email"
+                required
+                />
+                </li>
+                <li><textarea class="mensaje"
+                name="Mensaje"
+                id="Mensaje"
+                cols="30"
+                rows="10"
+                required
+                placeholder=" Dejanos tu consulta  "
+                ></textarea></li> 
 
-          <div>
-          <input type="submit" />
-         <input type="button" name="cancelar" value="Cancelar" /> 
-         
-          </div>
-         </div>
+                <li class="buttons">
+                <input class="submit" type="submit" value="ENVIAR"/>
+                
+                <input class="cancel" type="button" name="cancelar" value="CANCELAR" /></li>
+                </ul>
+            </form>
+            </div>
       </div>
     </main>
 
