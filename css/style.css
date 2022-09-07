@@ -189,13 +189,14 @@ a:active {
 .mainContacto {
   padding: 1rem 3rem 3rem 3rem;
   background-image: url(../assets/img/fondo\ fungi\ -\ opaco.jpg);
-  width: 100vw;
 }
 
 .formulario {
   display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
   flex-direction: row;
-  width: 100%;
+  width: 100vw;
   flex-grow: 2;
 }
 
@@ -203,7 +204,6 @@ a:active {
   order: 2;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   border: 2px solid black;
   border-radius: 15px;
   padding: 20px;
@@ -281,51 +281,6 @@ textarea:focus {
 .formulario .imagender {
   order: 3;
   opacity: 0.5;
-}
-
-.mainContacto .formulario h2 {
-  text-align: center;
-  align-self: center;
-  justify-self: center;
-  grid-column: 2/3;
-  grid-row-end: 1;
-}
-
-.mainContacto .nombreApellido {
-  grid-column: 2/3;
-  grid-row: 1;
-  grid-row-end: 2;
-  justify-items: center;
-  border-radius: 10px;
-  border: 2px solid black;
-}
-
-.mainContacto .telefono {
-  grid-column: 2/3;
-  grid-row: 2;
-  border-radius: 10px;
-  border: 2px solid black;
-}
-
-.mainContacto .email {
-  grid-column: 2/3;
-  grid-row: 3;
-  border-radius: 10px;
-  border: 2px solid black;
-}
-
-.formulario div {
-  grid-column: 2/3;
-  grid-row: 5;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-
-.mainContacto .mensaje {
-  grid-column: 2/3;
-  grid-row: 4;
-  border-radius: 10px;
-  border: 2px solid black;
 }
 
 .mainProductos p {
