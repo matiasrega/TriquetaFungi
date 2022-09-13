@@ -1,3 +1,5 @@
+@import "vars";
+
 /* comentarios */
 * {
   box-sizing: border-box;
@@ -8,6 +10,14 @@
   font-family: Kanit !important;
   /*google font*/
   font-weight: bold;
+}
+
+.tituloPrincipal {
+  h1 {
+    font-size: $widthTituloH1;
+    text-align: center;
+    padding-top: 1rem;
+  }
 }
 
 a:link,
@@ -96,28 +106,6 @@ a:active {
   display: block;
 }
 
-/* .header__img {
-  margin-top: 6px;
-  margin-bottom: 3px;
-  padding: 0px;
-  width: 100%;
-  height: auto;
-  border: 1px solid black;
-  border-radius: 60px;
-}
-
-.logoMenu {
-  display: flex;
-  flex-wrap: wrap;
-  /*   padding: 0.5rem; */
-/*   text-align: center;
-  justify-content: space-between;
-}
- */
-/* .logo {
-  display: flex;
-} */
-
 @keyframes logorotacion {
   0% {
     transform: rotate(360deg);
@@ -139,10 +127,6 @@ a:active {
   animation: logorotacion 2s linear 0s infinite none;
 }
 
-/* .logo img {
-  height: 100px;
-}
- */
 #menuHome {
   padding-top: 25px;
   border-top: 100px;

@@ -11,6 +11,12 @@
   font-weight: bold;
 }
 
+.tituloPrincipal h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
 a:link,
 a:visited,
 a:active {
@@ -97,32 +103,12 @@ a:active {
   display: block;
 }
 
-/* .header__img {
-  margin-top: 6px;
-  margin-bottom: 3px;
-  padding: 0px;
-  width: 100%;
-  height: auto;
-  border: 1px solid black;
-  border-radius: 60px;
-}
-
-.logoMenu {
-  display: flex;
-  flex-wrap: wrap;
-  /*   padding: 0.5rem; */
-/*   text-align: center;
-  justify-content: space-between;
-}
- */
-/* .logo {
-  display: flex;
-} */
 @-webkit-keyframes logorotacion {
   0% {
     transform: rotate(360deg);
   }
 }
+
 @keyframes logorotacion {
   0% {
     transform: rotate(360deg);
@@ -145,10 +131,6 @@ a:active {
           animation: logorotacion 2s linear 0s infinite none;
 }
 
-/* .logo img {
-  height: 100px;
-}
- */
 #menuHome {
   padding-top: 25px;
   border-top: 100px;
