@@ -13,10 +13,16 @@
 }
 
 .tituloPrincipal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   h1 {
     font-size: $widthTituloH1;
     text-align: center;
     padding-top: 1rem;
+  }
+  img {
+    width: 6rem;
   }
 }
 
@@ -24,6 +30,12 @@ a:link,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+.navbar-nav {
+  gap: 5rem;
+  text-align: justify;
+  align-items: flex-start;
 }
 
 .tooltip1 {
@@ -147,12 +159,10 @@ a:active {
 }
 
 .gralMain {
-  padding-top: 2rem;
   justify-content: center;
   align-content: center;
-  height: 100vh;
-  /* padding: 1rem 3rem 3rem 3rem; */
   background-image: url(../assets/img/fondo\ fungi.webp);
+  padding-bottom: 1rem;
 }
 
 .mainProductos {
@@ -273,8 +283,8 @@ textarea:focus {
 .mainPage {
   width: 600px;
   display: grid;
-  /*  justify-content: center;
-  align-content: center; */
+  justify-content: center;
+  align-content: center;
   margin: 0 auto;
   grid-template-areas:
     "one two two two"
@@ -293,7 +303,6 @@ textarea:focus {
 
 .hongosHome {
   grid-area: one;
-  display: flex;
   border: solid 1px black;
 }
 
@@ -589,21 +598,54 @@ textarea:focus {
   }
 }
 
+@media (max-width: 991px) {
+  .navbar-nav {
+    gap: 0rem;
+    text-align: justify;
+    align-items: center;
+  }
+  .container-fluid {
+    justify-content: space-between;
+  }
+}
+
 @media (max-width: 900px) {
+  .tituloPrincipal h1 {
+    font-size: 2.5rem;
+  }
+
+  .tituloPrincipal img {
+    width: 3rem;
+  }
+
   #menuHome ul {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media (max-width: 610px) {
-  .mainPage {
-    width: 100vw;
+@media (max-width: 700px) {
+  .gralMain {
+    width: 100%;
     height: auto;
+}
+  .tituloPrincipal h1 {
+    font-size: 1.5rem;
+  }
+
+@media (max-width: 610px) {
+
+  .tituloPrincipal h1 {
+    font-size: 1.5rem;
+  }
+
+  .tituloPrincipal img {
+    width: 3rem;
   }
 }
 
 @media (max-width: 450px) {
+  
   .gralMain {
     margin: 0 auto;
   }

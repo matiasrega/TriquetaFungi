@@ -11,10 +11,18 @@
   font-weight: bold;
 }
 
+.tituloPrincipal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 .tituloPrincipal h1 {
   font-size: 3rem;
   text-align: center;
   padding-top: 1rem;
+}
+.tituloPrincipal img {
+  width: 6rem;
 }
 
 a:link,
@@ -122,13 +130,13 @@ a:active {
 
 .navbar div a img:hover {
   -webkit-animation: logorotacion 2s linear 0s infinite none;
-          animation: logorotacion 2s linear 0s infinite none;
+  animation: logorotacion 2s linear 0s infinite none;
 }
 
 .logo:hover {
   opacity: 0.5;
   -webkit-animation: logorotacion 2s linear 0s infinite none;
-          animation: logorotacion 2s linear 0s infinite none;
+  animation: logorotacion 2s linear 0s infinite none;
 }
 
 #menuHome {
@@ -151,12 +159,10 @@ a:active {
 }
 
 .gralMain {
-  padding-top: 2rem;
   justify-content: center;
   align-content: center;
-  height: 100vh;
-  /* padding: 1rem 3rem 3rem 3rem; */
   background-image: url(../assets/img/fondo\ fungi.webp);
+  padding-bottom: 1rem;
 }
 
 .mainProductos {
@@ -277,8 +283,8 @@ textarea:focus {
 .mainPage {
   width: 600px;
   display: grid;
-  /*  justify-content: center;
-  align-content: center; */
+  justify-content: center;
+  align-content: center; 
   margin: 0 auto;
   grid-template-areas: "one two two two" "one three six four" "one five five four";
   grid-template-columns: [one] 50% [two] 20% [three] 20% [four] 25%;
@@ -293,7 +299,6 @@ textarea:focus {
 
 .hongosHome {
   grid-area: one;
-  display: flex;
   border: solid 1px black;
 }
 
@@ -576,18 +581,56 @@ textarea:focus {
     margin: 0 auto !important;
   }
 }
+
+@media (max-width: 991px) {
+.navbar-nav {
+  gap: 0rem;
+  text-align:justify;
+  align-items: center;
+}
+.container-fluid {
+  justify-content: space-between;
+}
+}
+
+
 @media (max-width: 900px) {
+  .tituloPrincipal h1 {
+    font-size: 2.5rem;
+  }
+
+  .tituloPrincipal img {
+    width: 3rem;
+  }
+
   #menuHome ul {
     display: flex;
     flex-direction: column;
   }
 }
-@media (max-width: 610px) {
-  .mainPage {
-    width: 100vw;
+
+@media (max-width: 700px) {
+  .gralMain {
+    width: 100%;
     height: auto;
+}
+  .tituloPrincipal h1 {
+    font-size: 1.5rem;
+  }
+
+
+
+@media (max-width: 610px) {
+
+  .tituloPrincipal h1 {
+    font-size: 1.5rem;
+  }
+
+  .tituloPrincipal img {
+    width: 3rem;
   }
 }
+
 @media (max-width: 450px) {
   .gralMain {
     margin: 0 auto;
@@ -632,4 +675,4 @@ textarea:focus {
   .logoMenu {
     justify-content: center;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
