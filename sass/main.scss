@@ -628,76 +628,75 @@ textarea:focus {
   .gralMain {
     width: 100%;
     height: auto;
-}
+  }
   .tituloPrincipal h1 {
     font-size: 1.5rem;
   }
 
-@media (max-width: 610px) {
+  @media (max-width: 610px) {
+    .tituloPrincipal h1 {
+      font-size: 1.5rem;
+    }
 
-  .tituloPrincipal h1 {
-    font-size: 1.5rem;
+    .tituloPrincipal img {
+      width: 3rem;
+    }
   }
 
-  .tituloPrincipal img {
-    width: 3rem;
-  }
-}
+  @media (max-width: 450px) {
+    .gralMain {
+      margin: 0 auto;
+    }
 
-@media (max-width: 450px) {
-  
-  .gralMain {
-    margin: 0 auto;
-  }
+    .mainPage {
+      display: none;
+    }
 
-  .mainPage {
-    display: none;
-  }
+    .mainResponsive {
+      display: grid;
+      grid-gap: 1rem;
+      width: 100%;
+    }
 
-  .mainResponsive {
-    display: grid;
-    grid-gap: 1rem;
-    width: 100%;
-  }
+    .imgResponsive {
+      padding: 0.5rem 2rem 0.5rem 2rem;
+    }
 
-  .imgResponsive {
-    padding: 0.5rem 2rem 0.5rem 2rem;
-  }
+    .mainResponsive div:last-child {
+      padding-bottom: 4rem;
+    }
 
-  .mainResponsive div:last-child {
-    padding-bottom: 4rem;
-  }
+    .formulario .imagenizq {
+      display: none;
+    }
 
-  .formulario .imagenizq {
-    display: none;
-  }
+    .formulario .imagender {
+      display: none;
+    }
 
-  .formulario .imagender {
-    display: none;
-  }
+    .imgResponsive img {
+      justify-items: center;
+      width: 100%;
+      height: 18.75rem;
+      border: 3px solid black;
+    }
 
-  .imgResponsive img {
-    justify-items: center;
-    width: 100%;
-    height: 18.75rem;
-    border: 3px solid black;
-  }
+    .gralMain {
+      height: 100%;
+      width: 100vw;
+    }
 
-  .gralMain {
-    height: 100%;
-    width: 100vw;
-  }
+    #footer {
+      display: flex;
+      flex-direction: column;
+    }
 
-  #footer {
-    display: flex;
-    flex-direction: column;
-  }
+    #menuHome {
+      padding: 0;
+    }
 
-  #menuHome {
-    padding: 0;
-  }
-
-  .logoMenu {
-    justify-content: center;
+    .logoMenu {
+      justify-content: center;
+    }
   }
 }
