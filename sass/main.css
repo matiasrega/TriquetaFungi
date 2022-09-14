@@ -31,6 +31,12 @@ a:active {
   text-decoration: none;
 }
 
+.navbar-nav {
+  gap: 5rem;
+  text-align: justify;
+  align-items: flex-start;
+}
+
 .tooltip1 {
   position: relative;
 }
@@ -62,8 +68,8 @@ a:active {
   line-height: 20px;
   z-index: 500;
   text-align: center;
-  bottom: 400px;
-  left: 600px;
+  bottom: 300px;
+  left: 900px;
   border-radius: 10px;
 }
 
@@ -130,13 +136,13 @@ a:active {
 
 .navbar div a img:hover {
   -webkit-animation: logorotacion 2s linear 0s infinite none;
-  animation: logorotacion 2s linear 0s infinite none;
+          animation: logorotacion 2s linear 0s infinite none;
 }
 
 .logo:hover {
   opacity: 0.5;
   -webkit-animation: logorotacion 2s linear 0s infinite none;
-  animation: logorotacion 2s linear 0s infinite none;
+          animation: logorotacion 2s linear 0s infinite none;
 }
 
 #menuHome {
@@ -284,7 +290,7 @@ textarea:focus {
   width: 600px;
   display: grid;
   justify-content: center;
-  align-content: center; 
+  align-content: center;
   margin: 0 auto;
   grid-template-areas: "one two two two" "one three six four" "one five five four";
   grid-template-columns: [one] 50% [two] 20% [three] 20% [four] 25%;
@@ -390,20 +396,20 @@ textarea:focus {
 }
 
 #footer {
+  height: 10rem;
   display: grid;
   grid-template-areas: "one two three";
   grid-template-columns: [one] 1fr [two] 1fr [three] 1fr;
   padding: 1rem 10px 1rem 10px;
 }
-
-.footer__text {
+#footer__text {
   grid-area: one;
   display: flex;
   justify-content: center;
+  align-content: center;
   align-items: center;
 }
-
-.footer__text small {
+#footer__text small {
   padding-left: 1rem;
 }
 
@@ -581,57 +587,46 @@ textarea:focus {
     margin: 0 auto !important;
   }
 }
-
 @media (max-width: 991px) {
-.navbar-nav {
-  gap: 0rem;
-  text-align:justify;
-  align-items: center;
+  .navbar-nav {
+    gap: 0rem;
+    text-align: justify;
+    align-items: center;
+  }
+  .container-fluid {
+    justify-content: space-between;
+  }
 }
-.container-fluid {
-  justify-content: space-between;
-}
-}
-
-
 @media (max-width: 900px) {
   .tituloPrincipal h1 {
     font-size: 2.5rem;
   }
-
   .tituloPrincipal img {
     width: 3rem;
   }
-
   #menuHome ul {
     display: flex;
     flex-direction: column;
   }
 }
-
 @media (max-width: 700px) {
   .gralMain {
     width: 100%;
     height: auto;
+  }
+  .tituloPrincipal h1 {
+    font-size: 1.5rem;
+  }
 }
+@media (max-width: 700px) and (max-width: 610px) {
   .tituloPrincipal h1 {
     font-size: 1.5rem;
   }
-
-
-
-@media (max-width: 610px) {
-
-  .tituloPrincipal h1 {
-    font-size: 1.5rem;
-  }
-
   .tituloPrincipal img {
     width: 3rem;
   }
 }
-
-@media (max-width: 450px) {
+@media (max-width: 700px) and (max-width: 450px) {
   .gralMain {
     margin: 0 auto;
   }
@@ -675,4 +670,4 @@ textarea:focus {
   .logoMenu {
     justify-content: center;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

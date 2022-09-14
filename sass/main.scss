@@ -69,8 +69,8 @@ a:active {
   line-height: 20px;
   z-index: 500;
   text-align: center;
-  bottom: 400px;
-  left: 600px;
+  bottom: 300px;
+  left: 900px;
   border-radius: 10px;
 }
 
@@ -394,21 +394,23 @@ textarea:focus {
 }
 
 #footer {
+  height: 10rem;
   display: grid;
   grid-template-areas: "one two three";
   grid-template-columns: [one] 1fr [two] 1fr [three] 1fr;
   padding: 1rem 10px 1rem 10px;
-}
 
-.footer__text {
-  grid-area: one;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  &__text {
+    grid-area: one;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 
-.footer__text small {
-  padding-left: 1rem;
+    small {
+      padding-left: 1rem;
+    }
+  }
 }
 
 .redes {
