@@ -32,10 +32,28 @@ a:active {
   text-decoration: none;
 }
 
+/* .navbar {
+  .container-fluid {
+    border-bottom: 1px solid black;
+  }
+} */
+
 .navbar-nav {
   gap: 5rem;
   text-align: justify;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 50%;
+  }
 }
 
 .tooltip1 {
@@ -130,12 +148,7 @@ a:active {
   border-radius: 10px;
 }
 
-.navbar div a img:hover {
-  animation: logorotacion 2s linear 0s infinite none;
-}
-
-.logo:hover {
-  opacity: 0.5;
+.navbar-brand:hover {
   animation: logorotacion 2s linear 0s infinite none;
 }
 
@@ -394,11 +407,13 @@ textarea:focus {
 }
 
 #footer {
-  height: 10rem;
+  height: 6rem;
   display: grid;
   grid-template-areas: "one two three";
   grid-template-columns: [one] 1fr [two] 1fr [three] 1fr;
   padding: 1rem 10px 1rem 10px;
+  align-items: center;
+  border-top: 1px solid black;
 
   &__text {
     grid-area: one;
