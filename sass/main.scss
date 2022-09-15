@@ -550,6 +550,25 @@ textarea:focus {
   font-weight: bolder;
 }
 
+#list-example {
+  border-radius: 30px;
+  border: 1px solid black;
+
+  a {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+  }
+  .bg-black {
+    color: white;
+  }
+}
+
+#list-example a:hover {
+  background-color: black;
+  color: white;
+}
+
 @media (max-width: 1200px) {
   .imagender {
     width: 100%;
