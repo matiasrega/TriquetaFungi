@@ -16,6 +16,8 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
   h1 {
     font-size: $widthTituloH1;
     text-align: center;
@@ -174,7 +176,7 @@ a:active {
 .gralMain {
   justify-content: center;
   align-content: center;
-  background-image: url(../assets/img/fondo\ fungi.webp);
+  background-image: url(../assets/img/fondo\ fungi\ -\ opaco.jpg);
   padding-bottom: 1rem;
 }
 
@@ -222,36 +224,59 @@ a:active {
 .formularioContacto {
   margin: 0 auto;
   width: 300px;
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding-bottom: 1rem;
+  }
+  .nombreApellido {
+    width: 100%;
+    text-align: center;
+  }
+  .telefono {
+    width: 100%;
+    text-align: center;
+  }
+  .email {
+    width: 100%;
+    text-align: center;
+  }
+  .mensaje {
+    width: 100%;
+  }
 }
 
-.formularioContacto ul {
+/* .formularioContacto ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
+} */
 
-.formularioContacto ul li {
+/* .formularioContacto ul li {
   padding-bottom: 1rem;
-}
+} */
 
-.formularioContacto ul li .nombreApellido {
+/* .formularioContacto ul li .nombreApellido {
   width: 100%;
   text-align: center;
-}
+} */
 
-.formularioContacto ul li .telefono {
+/*.formularioContacto ul li .telefono {
   width: 100%;
   text-align: center;
-}
+} */
 
-.formularioContacto ul li .email {
+/* .formularioContacto ul li .email {
   width: 100%;
   text-align: center;
-}
+} */
 
-.formularioContacto ul li .mensaje {
+/* .formularioContacto ul li .mensaje {
   width: 100%;
-}
+} */
 
 input:focus {
   border-color: #000;
@@ -294,7 +319,8 @@ textarea:focus {
 }
 
 .mainPage {
-  width: 600px;
+  width: 100%;
+  max-width: 700px;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -303,9 +329,21 @@ textarea:focus {
     "one two two two"
     "one three six four"
     "one five five four";
-  grid-template-columns: [one] 50% [two] 20% [three] 20% [four] 25%;
+  grid-template-columns: [one] 45% [two] 15% [three] 15% [four] 25%;
   grid-template-rows: [one] 40% [two] 15% [three] 45%;
   justify-content: center;
+  div a img {
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.mainPage div a img:hover {
+  filter: grayscale(0%);
+  transition: all 0.1s;
 }
 
 /* grid template para distribuir los tamaños del main a las imagenes */
@@ -319,25 +357,40 @@ textarea:focus {
   border: solid 1px black;
 }
 
-.hongosHome a img {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .investigacionHome {
   grid-area: two;
   width: 100%;
   border: solid 1px black;
 }
 
-.investigacionHome a img {
+/* .investigacionHome a img {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-}
+} */
+
+/* .productosHome a img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+/* .contactoHome a img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+/* .hongosHome a img {
+  filter: grayscale(100%);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
 
 .vacio {
   grid-area: three;
@@ -348,7 +401,7 @@ textarea:focus {
 }
 
 .vacio:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .vacio2 {
@@ -360,7 +413,7 @@ textarea:focus {
 }
 
 .vacio2:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .productosHome {
@@ -370,40 +423,10 @@ textarea:focus {
   display: inline-block;
 }
 
-.productosHome a img {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.productosHome a img:hover {
-  opacity: 0.8;
-}
-
 .contactoHome {
   grid-area: five;
   border: solid 1px black;
   width: 100%;
-}
-
-.contactoHome a img {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.contactoHome a img:hover {
-  opacity: 0.8;
-}
-
-.investigacionHome a img:hover {
-  opacity: 0.8;
-}
-
-.hongosHome a img:hover {
-  opacity: 0.8;
 }
 
 #footer {
@@ -558,6 +581,11 @@ textarea:focus {
   box-shadow: black !important;
 }
 
+.g-0 {
+  border-color: black !important;
+  border: 1px solid black !important;
+}
+
 .indice {
   position: fixed;
   left: 83%;
@@ -660,7 +688,8 @@ textarea:focus {
     align-items: center;
   }
   .container-fluid {
-    justify-content: space-between;
+    justify-content: flex-start;
+    /*   justify-content: space-between; */
   }
 }
 
@@ -711,11 +740,28 @@ textarea:focus {
       display: grid;
       grid-gap: 1rem;
       width: 100%;
+
+      .imgResponsive {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        a img {
+          justify-items: center;
+          width: 100%;
+          height: 18.75rem;
+          border: 3px solid black;
+        }
+      }
     }
 
-    .imgResponsive {
+    /*     .imgResponsive {
       padding: 0.5rem 2rem 0.5rem 2rem;
-    }
+    } */
+
+    /*     .imgResponsive img {
+      justify-items: center;
+      width: 100%;
+      height: 18.75rem;
+      border: 3px solid black;
+    } */
 
     .mainResponsive div:last-child {
       padding-bottom: 4rem;
@@ -727,13 +773,6 @@ textarea:focus {
 
     .formulario .imagender {
       display: none;
-    }
-
-    .imgResponsive img {
-      justify-items: center;
-      width: 100%;
-      height: 18.75rem;
-      border: 3px solid black;
     }
 
     .gralMain {
