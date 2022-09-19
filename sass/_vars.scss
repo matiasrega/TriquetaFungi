@@ -5,3 +5,9 @@ $widthMDesktop: 1100px;
 $widthXLMobile: 900px;
 $widthLMobile: 610px;
 $widthMMobile: 450px;
+
+@mixin tooltip {
+  display: block;
+  background-color: black;
+  color: white;
+}
