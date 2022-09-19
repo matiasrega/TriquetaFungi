@@ -11,3 +11,16 @@ $widthMMobile: 450px;
   background-color: black;
   color: white;
 }
+
+@mixin tooltip-box($left, $bottom) {
+  display: none;
+  width: 10rem;
+  position: absolute;
+  line-height: 20px;
+  z-index: 500;
+  text-align: center;
+  bottom: $bottom;
+  left: $left;
+  border-style: groove;
+  border-radius: 5px;
+}

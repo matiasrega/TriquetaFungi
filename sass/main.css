@@ -60,7 +60,7 @@ a:active {
   width: 10rem;
   position: absolute;
   line-height: 20px;
-  z-index: -1;
+  z-index: 500;
   text-align: center;
   bottom: 150px;
   left: 30rem;
@@ -82,12 +82,11 @@ a:active {
   display: none;
   width: 10rem;
   position: absolute;
-  background-color: whitesmoke;
   line-height: 20px;
   z-index: 500;
   text-align: center;
-  bottom: 300px;
-  left: 900px;
+  bottom: 18.75rem;
+  left: 56.25rem;
   border-style: groove;
   border-radius: 5px;
 }
@@ -109,8 +108,8 @@ a:active {
   line-height: 20px;
   z-index: 500;
   text-align: center;
-  bottom: 50px;
-  left: 900px;
+  bottom: 3.12rem;
+  left: 56.25rem;
   border-style: groove;
   border-radius: 5px;
 }
@@ -132,8 +131,8 @@ a:active {
   line-height: 20px;
   z-index: 500;
   text-align: center;
-  bottom: -100px;
-  left: 700px;
+  bottom: -6.25rem;
+  left: 43.75rem;
   border-style: groove;
   border-radius: 5px;
 }
@@ -195,11 +194,6 @@ a:active {
 .mainProductos, .mainContacto, .mainHongos, .mainInvestigacion {
   padding: 1rem 3rem 3rem 3rem;
   background-image: url(../assets/img/fondo\ fungi\ -\ opaco.jpg);
-}
-
-.mainContacto {
-  /*   padding: 1rem 3rem 3rem 3rem;
-  background-image: url(../assets/img/fondo\ fungi\ -\ opaco.jpg); */
 }
 
 .formulario {

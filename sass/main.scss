@@ -58,16 +58,7 @@ a:active {
 }
 
 .hongosHome .tooltip-box1 {
-  display: none;
-  width: 10rem;
-  position: absolute;
-  line-height: 20px;
-  z-index: 500;
-  text-align: center;
-  bottom: 150px;
-  left: 30rem;
-  border-style: groove;
-  border-radius: 5px;
+  @include tooltip-box(30rem, 150px);
 }
 
 .hongosHome:hover .tooltip-box1 {
@@ -79,17 +70,7 @@ a:active {
 }
 
 .investigacionHome .tooltip-box2 {
-  display: none;
-  width: 10rem;
-  position: absolute;
-  background-color: whitesmoke;
-  line-height: 20px;
-  z-index: 500;
-  text-align: center;
-  bottom: 300px;
-  left: 900px;
-  border-style: groove;
-  border-radius: 5px;
+  @include tooltip-box(56.25rem, 18.75rem);
 }
 
 .investigacionHome:hover .tooltip-box2 {
@@ -101,16 +82,7 @@ a:active {
 }
 
 .productosHome .tooltip-box3 {
-  display: none;
-  width: 10rem;
-  position: absolute;
-  line-height: 20px;
-  z-index: 500;
-  text-align: center;
-  bottom: 50px;
-  left: 900px;
-  border-style: groove;
-  border-radius: 5px;
+  @include tooltip-box(56.25rem, 3.12rem);
 }
 
 .productosHome:hover .tooltip-box3 {
@@ -122,16 +94,7 @@ a:active {
 }
 
 .contactoHome .tooltip-box4 {
-  display: none;
-  width: 10rem;
-  position: absolute;
-  line-height: 20px;
-  z-index: 500;
-  text-align: center;
-  bottom: -100px;
-  left: 700px;
-  border-style: groove;
-  border-radius: 5px;
+  @include tooltip-box(43.75rem, -6.25rem);
 }
 
 .contactoHome:hover .tooltip-box4 {
@@ -196,8 +159,6 @@ a:active {
 
 .mainContacto {
   @extend .mainProductos;
-  /*   padding: 1rem 3rem 3rem 3rem;
-  background-image: url(../assets/img/fondo\ fungi\ -\ opaco.jpg); */
 }
 
 .formulario {
