@@ -165,25 +165,6 @@ a:active {
           animation: logorotacion 2s linear 0s infinite none;
 }
 
-/* 
-#menuHome {
-  padding-top: 25px;
-  border-top: 100px;
-  padding-right: 30vh;
-}
-
-#menuHome ul {
-  display: flex;
-  border-bottom: 1px solid black;
-}
-
-.menu__item {
-  padding: 1rem;
-}
-
-.menu__item a:hover {
-  opacity: 0.5;
-} */
 .gralMain {
   justify-content: center;
   align-content: center;
@@ -444,10 +425,14 @@ textarea:focus {
   gap: 2rem;
   padding: 0px;
 }
-
 .redes ul li img {
   width: 25px;
   border-radius: 1px;
+}
+
+.redes ul li a:hover {
+  filter: opacity(0.3) drop-shadow(0 0 0px #ffbf00);
+  transition: all 0.3seg;
 }
 
 .direccion {
@@ -455,7 +440,6 @@ textarea:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*   place-self: end; */
 }
 
 #footer .footer__text img {
