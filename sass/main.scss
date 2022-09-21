@@ -190,35 +190,6 @@ a:active {
   }
 }
 
-/* .formularioContacto ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-} */
-
-/* .formularioContacto ul li {
-  padding-bottom: 1rem;
-} */
-
-/* .formularioContacto ul li .nombreApellido {
-  width: 100%;
-  text-align: center;
-} */
-
-/*.formularioContacto ul li .telefono {
-  width: 100%;
-  text-align: center;
-} */
-
-/* .formularioContacto ul li .email {
-  width: 100%;
-  text-align: center;
-} */
-
-/* .formularioContacto ul li .mensaje {
-  width: 100%;
-} */
-
 input:focus {
   border-color: #000;
 }
@@ -304,35 +275,6 @@ textarea:focus {
   border: solid 1px black;
 }
 
-/* .investigacionHome a img {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-} */
-
-/* .productosHome a img {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-} */
-
-/* .contactoHome a img {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-} */
-
-/* .hongosHome a img {
-  filter: grayscale(100%);
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-} */
-
 .vacio {
   grid-area: three;
   border: solid 1px black;
@@ -412,8 +354,8 @@ textarea:focus {
 }
 
 .redes ul li a:hover {
-  filter: opacity(0.3) drop-shadow(0 0 0px #ffbf00);
-  transition: all 0.3seg;
+  filter: opacity(0.3) drop-shadow(0 0 5px #ffbf00);
+  transition: all 0.5s;
 }
 
 .direccion {
@@ -606,7 +548,6 @@ textarea:focus {
   }
 
   .row {
-    /*   width: 100%; */
     margin: 0px !important;
   }
 
@@ -640,7 +581,6 @@ textarea:focus {
   }
   .container-fluid {
     justify-content: flex-start;
-    /*   justify-content: space-between; */
   }
 }
 
@@ -702,17 +642,6 @@ textarea:focus {
         }
       }
     }
-
-    /*     .imgResponsive {
-      padding: 0.5rem 2rem 0.5rem 2rem;
-    } */
-
-    /*     .imgResponsive img {
-      justify-items: center;
-      width: 100%;
-      height: 18.75rem;
-      border: 3px solid black;
-    } */
 
     .mainResponsive div:last-child {
       padding-bottom: 4rem;
