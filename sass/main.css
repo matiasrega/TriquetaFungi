@@ -345,11 +345,10 @@ textarea:focus {
 }
 
 #footer {
-  height: 6rem;
+  height: 3rem;
   display: grid;
   grid-template-areas: "one two three";
   grid-template-columns: [one] 1fr [two] 1fr [three] 1fr;
-  padding: 1rem 10px 1rem 10px;
   align-items: center;
   border-top: 1px solid black;
 }
